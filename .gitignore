@@ -1,0 +1,41 @@
+# ---- 编译产物 ----
+*.exe
+*.obj
+*.o
+*.out
+*.pdb
+*.ilk
+*.tlog
+*.ipch
+*.idb
+*.exp
+*.lib
+*.dll
+*.stackdump
+*.log
+*.db
+
+# ---- 构建目录 / IDE ----
+cmake-build-debug/
+cmake-build-release/
+out/
+build/
+.vs/
+.vscode/
+.idea/
+Debug/
+Release/
+x64/
+*.vcxproj.user
+
+# ---- 系统文件 ----
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# ---- AI 工具本地配置 ----
+.claude/
+
+# ---- 之前实验留下的空仓库（里面只有 .git，没有代码）----
+git/
+C-Chen-s-repository/

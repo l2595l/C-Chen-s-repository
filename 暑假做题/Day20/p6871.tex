@@ -1,0 +1,18 @@
+\documentclass{article}
+\usepackage{amsmath, amssymb}
+
+\begin{document}
+
+    推导过程如下：
+
+    \begin{align*}
+        \text{步骤1: } & ((33X) \oplus i) \bmod 1024 = y && \text{(原始定义)} \\
+        \text{步骤2: } & ((33X) \oplus i) \& 1023 = y && \text{(取模 → 按位与)} \\
+        \text{步骤3: } & ((33X) \& 1023) \oplus (i \& 1023) = y && \text{(分配律)} \\
+        \text{步骤4: } & ((33X) \& 1023) \oplus i = y && (i < 1024,\ i \& 1023 = i) \\
+        \text{步骤5: } & (33X) \bmod 1024 = y \oplus i && \text{(两边异或 } i) \\
+        \text{步骤6: } & (33X) \bmod 1024 = y \oplus i && \text{(按位与 → 取模)} \\
+        \text{步骤7: } & X = (y \oplus i) \times 33^{-1} \bmod 1024 && \text{(乘以逆元)}
+    \end{align*}
+
+\end{document}
