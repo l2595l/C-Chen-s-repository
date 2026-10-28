@@ -50,8 +50,8 @@ Data/
 
 ```cpp
 #include <bits/stdc++.h>
-#define lcm(x, y) x / __gcd(x, y) * y
-#define lb(x) (x & -x)
+#define lcm(x,y) x/__gcd(x,y)*y
+#define lb(x) (x&-x)
 #define str to_string
 
 using namespace std;
